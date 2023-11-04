@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* organizar os itens na tela de login */
+.left-login {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Alinha como coluna */
+}
+
+/* Nesta caso chamei o h1 dentro da class para colorir a tag */
+/* nesse caso, essa cor aplca em todos os h1 dentro da class left-login*/
+.left-login>h1 {
+    font-size: auto;
+    color: #77fdc0;
+    /* font-size: 3vw; */
+}
+
+.left-login-image {
+    /* Tamanho da imagem*/
+    width: auto;
+    /* tava 35vm*/
+}
+
+.right-login {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* padding para a tela de login */
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    /* Borda do Login */
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    /* Sombra na borda */
+}
+
+.card-login>h1 {
+    /*Colorir h1 dentro de class .card-login*/
+    color: #00ff88;
+    /* Cor da fonte LOGIN */
+    font-weight: 800;
+    /* Tamanho da fonte LOGIN*/
+    margin: 0;
+}
+
+.textfield {
+    /* centralização dos inputs*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    /* espaço entre os inputs*/
+    text-decoration: none;
+}
+
+.textfield>input {
+    width: 100%;
+    /* caixa usuario e senha */
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    /* Sombra na borda */
+    outline: none;
+    /* remove uma sombra do input*/
+    box-sizing: border-box;
+
+}
+
+.textfield>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+
+}
+
+.textfield>input::placeholder {
+    /*Muda a cor do placeholder*/
+    color: #f0ffff94;
+    text-decoration: none;
+}
+
+.btn-login {
+    width: 85%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    /* Borda redonda*/
+    outline: none;
+    text-transform: uppercase;
+    /*Letras maiusculas*/
+    font-weight: 800;
+    /* tamanho do entrar */
+    letter-spacing: 3px;
+    /* espaçamento */
+    color: #201b2c;
+    background: #00ff88;
+    /* cor do botão entrar */
+    cursor: pointer;
+    /* ação ao passar o mouse no botão*/
+    box-shadow: 0px 10px 40px -12px #00ff88;
+    /* luz em volta do botão */
+}
+
+.senha {
+    color: antiquewhite;
+    
+}
+
+.senha__reset{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cadastre {
+    color:#201b2c;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background: #201b2c;
+    color: aliceblue;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.login__campo1 {
+    margin-top: 1em 1em;
+    text-align: center;
+}
+
+.login__campo1::placeholder {
+    /*text-align: center;*/
+    text-transform: uppercase;
+}
+
+.voltar {
+    text-decoration: none;
+    color: black;
+    
+}
+
